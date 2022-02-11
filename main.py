@@ -23,7 +23,7 @@ def bop(update, context):
     context.bot.send_photo(chat_id=chat_id, photo=url)
 
 def main():
-    updater = Updater('YOUR_TOKEN', use_context=True)
+    updater = Updater('1811863530:AAFFYY_EqvKapAYf93HiO2j3qD-pGKNHgLg', use_context=True)
     dp = updater.dispatcher
     dp.add_handler(CommandHandler('bop',bop))
     updater.start_polling()
