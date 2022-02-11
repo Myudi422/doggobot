@@ -4,7 +4,7 @@ import requests
 import re
 
 def get_url():
-    contents = requests.get('https://random.dog/woof.json').json()
+    contents = requests.get('https://arugaz.herokuapp.com/api/nekonime').json()
     url = contents['url']
     return url
 
