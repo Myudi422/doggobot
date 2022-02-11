@@ -16,7 +16,7 @@ def get_image_url():
         file_extension = re.search("([^.]*)$",url).group(1).lower()
     return url
 
-@run_async
+run_async
 def bop(update, context):
     url = get_image_url()
     chat_id = update.message.chat_id
