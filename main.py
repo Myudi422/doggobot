@@ -16,7 +16,7 @@ def get_image_url():
     return url
 
 @run_async
-def bop(update: Update, context: CallbackContext) -> None:
+def bop(update, context):
     url = get_image_url()
     chat_id = update.message.chat_id
     # context.bot.send_photo(chat_id=chat_id, photo=url)
