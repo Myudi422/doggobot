@@ -3,7 +3,7 @@ import requests
 import re
 def get_url():
     contents = requests.get('https://arugaz.herokuapp.com/api/nekonime').json()
-    url = contents['url']
+    url = contents['result']
     return url
 def get_image_url():
     allowed_extension = ['jpg','jpeg','png']
