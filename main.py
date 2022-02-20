@@ -22,7 +22,7 @@ def get_image_url():
 def bop(update, context):
     msg = update.effective_message
     url = get_image_url()
-    context.bot.send_photo(chat_id=chat_id, photo=url)
+    context.bot.send_photo(chat_id=msg, photo=url)
     keyboard = [[InlineKeyboardButton(text="Send as file", callback_data=f"neko_callback, {link}, neko"),InlineKeyboardButton(text=f"Direct link",url=f"https://cdn.nekos.life/{link[0]}")]]
     keyboard += [[InlineKeyboardButton(text=delete_button, callback_data=f"neko_delete, {msg.from_user.id}")]]
 
