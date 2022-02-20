@@ -1,5 +1,6 @@
 from telegram.ext import Updater, InlineQueryHandler, CommandHandler
 import requests
+import run_async
 import re
 def get_url():
     contents = requests.get('https://arugaz.herokuapp.com/api/nekonime').json()
